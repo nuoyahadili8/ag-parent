@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ag-auth
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 7777
+
+
+jwt:
+  expire: 3600
+  pri-key:
+    path: D:\workspaces\IntelliJIDEA\ag-parent\ag-auth\src\main\resources\pri.key
+  pub-key:
+    path: D:\workspaces\IntelliJIDEA\ag-parent\ag-auth\src\main\resources\pub.key
