@@ -14,6 +14,7 @@ public class UserRest extends BaseController<BaseUserBiz,BaseUser>{
 
     @RequestMapping("/who")
     public String getCurrentUser(){
+        System.out.println("@@@@@@@@@@@@@@@@@@"+BaseContextHandler.getUserName());
         return BaseContextHandler.getUserName();
     }
 
